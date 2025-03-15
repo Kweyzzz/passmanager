@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.GenerationFragment">
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+        app:layout_constraintEnd_toStartOf="@+id/generation_CheckSym3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/generation_name9"
+        tools:ignore="MissingConstraints,DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/generation_name9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="484dp"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="@font/poppins"
+        android:text="Числа"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/generation_СheckLowercase"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/generation_CheckSym3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="484dp"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="@font/poppins"
+        android:text="Символы"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/generation_CheckUppercase"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/generation_CheckSym3"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/generation_CheckUppercase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="539dp"
+        android:layout_marginBottom="75dp"
+        android:fontFamily="@font/poppins"
+        android:text="Прописные"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSavePass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="67dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSavePass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/generation_CheckUppercase"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/generation_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="@font/poppins"
+        android:text="Новый пароль"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Поле Название -->
+    <TextView
+        android:id="@+id/generation_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="@font/poppins"
+        android:text="Название:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/generation_userID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/generation_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginBottom="23dp"
+        android:fontFamily="@font/poppins"
+        android:text="Длина"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/generation_name9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/generation_СheckLowercase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="539dp"
+        android:layout_marginBottom="75dp"
+        android:fontFamily="@font/poppins"
+        android:text="Строчные"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSavePass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/generation_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="286dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Пароль"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/generated_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Поле E-mail -->
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="42dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Apple"
+        android:padding="8dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/generation_name"
+        app:layout_constraintTop_toBottomOf="@+id/generation_text1" />
+
+    <TextView
+        android:id="@+id/generation_userID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/poppins"
+        android:text="E-mail:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/generated_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="49dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="111@mail.ru"
+        android:padding="8dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/generation_text2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/generation_userID" />
+
+    <ImageView
+        android:id="@+id/checkNameGeneration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/tick_circle"
+        app:layout_constraintBottom_toTopOf="@+id/checkNameGeneration2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/checkNameGeneration2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="108dp"
+        android:src="@drawable/tick_circle"
+        app:layout_constraintBottom_toTopOf="@+id/generated_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText_name"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- Поле для отображения сгенерированного пароля -->
+    <TextView
+        android:id="@+id/generated_password"
+        android:layout_width="356dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginBottom="36dp"
+        android:background="@android:drawable/editbox_background"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/generation_length"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="40dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/refresh_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/generated_password"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="133dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="24dp"
+        android:max="20"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/generation_length"
+        app:layout_constraintTop_toBottomOf="@+id/generated_password"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/seekBarValue"
+        android:layout_width="38dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="23dp"
+        android:fontFamily="@font/poppins"
+        android:text="8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/generation_CheckSym3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toEndOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/generated_password"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="67dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSavePass"
+        app:layout_constraintEnd_toStartOf="@+id/generation_CheckUppercase"
+        app:layout_constraintStart_toEndOf="@+id/generation_СheckLowercase"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSavePass"
+        android:layout_width="195dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="648dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="32dp"
+        android:text="Сохранить Пароль"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/BackButGeneration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="74dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintBottom_toTopOf="@+id/generation_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
