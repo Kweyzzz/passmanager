@@ -1,4 +1,4 @@
-package com.example.passmanager.fragments.pass
+package com.example.passmanager.ui.fragments.pass
 
 data class Password(
     val id: Long, // Уникальный номер

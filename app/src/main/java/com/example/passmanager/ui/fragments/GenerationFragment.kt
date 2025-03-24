@@ -1,4 +1,4 @@
-package com.example.passmanager.fragments
+package com.example.passmanager.ui.fragments
 
 import android.graphics.Color
 import android.os.Bundle

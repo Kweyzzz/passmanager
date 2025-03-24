@@ -1,6 +1,5 @@
-package com.example.passmanager.fragments
+package com.example.passmanager.ui.fragments
 
-import PasswordAdapter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +8,9 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.passmanager.databinding.FragmentHomeBinding
-import com.example.passmanager.fragments.pass.passwordList
+import com.example.passmanager.ui.fragments.pass.Password
+import com.example.passmanager.ui.fragments.pass.PasswordAdapter
+import com.example.passmanager.ui.fragments.pass.passwordList
 
 class HomeFragment : Fragment() {
 
@@ -29,10 +30,6 @@ class HomeFragment : Fragment() {
 
         binding.recyclerPasswords.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerPasswords.adapter = PasswordAdapter(passwordList)
-
-        binding.copyPassword.setOnClickListener {
-            Toast.makeText(requireContext(), "Пароль скопирован!", Toast.LENGTH_SHORT).show()
-        }
     }
 
     override fun onDestroyView() {
